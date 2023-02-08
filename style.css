@@ -1,0 +1,41 @@
+* {
+  font-family: url(./src/fonts/JetBrainsMono-Bold), Arial, Helvetica, sans-serif;  
+}
+
+body {
+    background-image: url(./src/images/spaceBG.jpg);
+    color: azure;
+}
+
+h1 {
+    text-align: center;
+    color: azure;
+}
+
+label{
+    color: azure;
+    font-size: large;
+    font-weight: bold;
+}
+
+div {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+div input{
+    margin-bottom: 5px;
+}
+
+
+form{
+    text-align: center;
+}
+
+
+input#btnCalcular{
+    width: 10em;  
+    height: 2em;
+    font-size: medium;
+    margin-bottom: 10px;
+}

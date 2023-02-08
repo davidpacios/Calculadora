@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    
+    <form action="">
+
+        <div id="divOperand1">
+            <label for="">Operando1:</label>
+            <br>
+            <input id="operand1" type="text" placeholder="Operando 1">
+        </div>
+
+        <div id="divOperator">
+            <input type="checkbox" id="suma" name="+" value="+" onchange="swapCheckbox(this)">
+            <label for="suma">+</label>
+
+            <input type="checkbox" id="resta" name="-" value="-" onchange="swapCheckbox(this)">
+            <label for="resta">-</label>
+
+            <input type="checkbox" id="multiplicacion" name="*" value="*" onchange="swapCheckbox(this)">
+            <label for="multiplicacion">*</label>
+
+            <input type="checkbox" id="division" name="/" value="/" onchange="swapCheckbox(this)">
+            <label for="division">/</label>
+
+        </div>
+
+        
+        <div id="divOperand2">
+            <label for="">Operando2:</label>
+            <br>
+            <input id="operand2" type="text" placeholder="Operando 2">
+        </div>
+        
+        <input id="btnCalcular" type="button" value="Calcular" onclick="calculateOperation()">
+        <br>
+        <label for="message" id="message"></label>
+
+    </form>
+
+
+</body>
+</html>
